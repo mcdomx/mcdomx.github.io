@@ -15,6 +15,20 @@ body {
 }
 
 
+/* COLOR STYLES
+-------------------------------------------------- */
+/* custom color pallets */
+
+.bg-blue {
+  background-color: #069EC3;
+  color: white
+}
+
+.bg-orange {
+  background-color: #E29D06;
+  color: black
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

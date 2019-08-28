@@ -1,0 +1,21 @@
+---
+layout: default
+project_name: Chatterbox
+---
+
+<!--Project
+================================================== -->
+<!-- Display selected project -->
+
+{% for project in site.data.projects %}
+	<div class="conainer">
+		{% if project.project_name == page.project_name %}
+			<iframe src={{ project.gitlink }} frameborder="0" scrolling="no" width="100%" height={{ project.pagelength }}></iframe>	
+		{% endif %}
+	</div>
+{% endfor %}
+
+
+
+
+

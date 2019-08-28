@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-blue">
     <a class="navbar-brand" href="#">{{ page.author }}</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
         {% endif %}
         
         <li class="nav-item active">
-          <a class="nav-link pl-1" href="static/mark_mcdonald_resume.pdf" download><img src="static/images/download.svg" width="15" height="15"/></a>
+          <a class="nav-link pl-1" href="/static/mark_mcdonald_resume.pdf" download><img src="/static/images/download.svg" width="15" height="15"/></a>
         </li>
         
         {% if page.url == "/course_summary.html"  %}
@@ -40,12 +40,34 @@
         {% endif %}
         
         <li class="nav-item active">
-          <a class="nav-link pl-1" href="static/mark_mcdonald_course_summary.pdf" download><img src="static/images/download.svg" width="15" height="15"/></a>
+          <a class="nav-link pl-1" href="/static/mark_mcdonald_course_summary.pdf" download><img src="/static/images/download.svg" width="15" height="15"/></a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="mailto:mark.mcdonald1@icloud.com">Contact</a>
-        </li>
+        
+        <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projects
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        {% for project in site.data.projects %}
+          <a class="dropdown-item" href={{ project.project_page }}>{{ project.project_name }}</a>
+        {% endfor %}
+        </div>
+      </li>
+        
+        
+        {% if page.url == "/contact.html"  %}
+			<li class="nav-item">
+				<a class="nav-link pr-0 disabled" href="contact.html">Contact</a>
+			</li>
+        {% else %}
+			<li class="nav-item active">
+				<a class="nav-link pr-0" href="contact.html">Contact</a>
+			</li>
+        {% endif %}
+        
       </ul>
-      <a class="my-2 my-sm-0" href="mailto:mark.mcdonald1@icloud.com">mark.mcdonald1@icloud.com</a>
+      <a class="my-2 my-sm-0" href="mailto:mark.mcdonald1@icloud.com">
+      	<img src="/static/images/envelope-closed.svg" class="rounded mx-auto d-block" width="20" height="20" alt="eMail"/>
+      </a>
     </div>
 </nav>

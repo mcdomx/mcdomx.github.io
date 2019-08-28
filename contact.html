@@ -1,0 +1,39 @@
+---
+layout: default
+description: Mark McDonald Professional Overview
+author: Mark McDonald
+title: Mark McDonald · Resume
+---
+
+<!--Contact
+================================================== -->
+<!-- Display contact details -->
+
+<div class="conainer my-5 mx-2">
+<hr>
+	{% for item in site.data.contact %}
+		<div class="row">
+			<div class="col-2"></div>
+			
+			<div class="col-1">
+				<img src={{ item.icon }} class="rounded mx-auto d-block" width="20" height="20" alt={{ item.description }}/>
+			</div>
+			
+			<div class="col-7">
+			
+				{% if item.type == 'text' %}
+					{{ item.value }}
+				{% elsif item.type == 'link' %}
+					<a href={{ item.value }} target="_blank">{{ item.value }}</a>
+				{% elsif item.type == 'email' %}
+					<a href={{ item.link }} target="_blank">{{ item.value }}</a>
+				{% endif %}
+			
+			</div>
+			<div class="col-2"></div>  
+		</div> <!-- row -->
+	{% endfor%}
+<hr>
+</div>
+
+
