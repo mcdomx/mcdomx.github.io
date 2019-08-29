@@ -16,3 +16,8 @@ jeckyll build
 
 jeckyll serve
     - builds _site that can be viewed at http://localhost:4000
+    
+To add new project's:
+	- update /data/projects.yml
+	- add new page for the project in /project_pages/<project_name>.html
+	- update the new html page with front matter variables
