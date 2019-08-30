@@ -48,14 +48,11 @@
           Projects
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-<!-- 
-        {% for project in site.data.projects %}
-          <a class="dropdown-item" href={{ project.project_page }}>{{ project.project_name }}</a>
-        {% endfor %}
- -->
-        {% for project in site.projects %}
-          <a class="dropdown-item" href={{ project.url }}>{{ project.project_name }}</a>
-        {% endfor %}
+        	<a class="dropdown-item" href="/projects.html">Project Summaries</a>
+        	<div class="dropdown-divider"></div>
+        	{% for project in site.projects %}
+          		<a class="dropdown-item" href={{ project.url }}>{{ project.project_name }}</a>
+        	{% endfor %}
         </div>
       </li>
         
