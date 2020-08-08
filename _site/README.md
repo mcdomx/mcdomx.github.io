@@ -11,13 +11,20 @@ After installing bundler and jekyll, the following were necessary to fix bundle 
     gem update --system
     bundler update --bundler
 
-jeckyll build
-    - builds _site
-
-jeckyll serve
-    - builds _site that can be viewed at http://localhost:4000
+Built the site:
+    
+    jekyll build
+    
+Run the site and view at http://localhost:4000
+    
+    jekyll serve
+    
     
 To add new project's:
-	- update /data/projects.yml
-	- add new page for the project in /project_pages/<project_name>.html
-	- update the new html page with front matter variables
+    
+1.  Create a project page for the project
+2.  Copy an application screenshot to `static/images`
+3.  Copy an existing project md template in `_projects/`.  Each md file will be used to create a link to a new project site automatically.  No need to update any HTML.  Just add the new md file to include new projects.
+4.  Rename the template to the repo name of the project
+5.  Update the md fields with relevant project information
+	
