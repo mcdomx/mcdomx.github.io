@@ -12,6 +12,7 @@ body {
   padding-top: 3rem;
   padding-bottom: 3rem;
   color: #5a5a5a;
+  font-family: Verdana, sans-serif;
 }
 
 
@@ -20,8 +21,25 @@ body {
 /* custom color pallets */
 
 .bg-blue {
-  background-color: #069EC3;
+  background-color: #19539b;
+  color: #e9e6e6
+}
+
+.bg-lightblue {
+  background-color: #ebf3f8;
+  color: #322f2f
+}
+
+.card-body {
+  font-size: large;
+}
+
+.card-footer a {
   color: white
+}
+
+.bg-blue a:hover {
+  font-weight: bold
 }
 
 .bg-orange {
@@ -29,6 +47,9 @@ body {
   color: black
 }
 
+.menu-icons :hover {
+  box-shadow: 0px 0px 15px antiquewhite;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -121,3 +142,5 @@ body {
     margin-top: 7rem;
   }
 }
+
+

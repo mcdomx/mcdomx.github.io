@@ -35,7 +35,7 @@
   
   <body>
   	<header>
-  		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-blue">
+  		<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-blue shadow">
     <div class="navbar-brand">Mark McDonald</div>
     
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
         
         
         <li class="nav-item active">
-          <a class="nav-link pl-1" href="/static/mark_mcdonald_resume.pdf" download><img src="/static/images/download.svg" width="15" height="15"/></a>
+          <a class="nav-link pl-1" href="/static/mark_mcdonald_resume.pdf" download><img src="/static/images/icons8-download-24.png" width="15" height="15"/></a>
         </li>
         
         
@@ -66,7 +66,7 @@
         
         
         <li class="nav-item active">
-          <a class="nav-link pl-1" href="/static/mark_mcdonald_course_summary.pdf" download><img src="/static/images/download.svg" width="15" height="15"/></a>
+          <a class="nav-link pl-1" href="/static/mark_mcdonald_course_summary.pdf" download><img src="/static/images/icons8-download-24.png" width="15" height="15"/></a>
         </li>
         
         <li class="nav-item dropdown active">
@@ -94,31 +94,53 @@
         
         
       </ul>
-      <a class="my-2 my-sm-0" href="mailto:mark.mcdonald1@icloud.com">
-      	<img src="/static/images/envelope-closed.svg" class="rounded mx-auto d-block" width="20" height="20" alt="eMail"/>
-      </a>
+        <div class="menu-icons m-2 my-sm-0">
+          <a href="https://www.linkedin.com/in/mcdonaldboston/" target="_blank">
+            <img src="/static/images/icons8-linkedin-24.png" class="rounded mx-auto d-block" width="20" height="20" alt="LinkedIn"/>
+          </a>
+        </div>
+        <div class="menu-icons m-2 my-sm-0">
+          <a href="https://github.com/mcdomx" target="_blank">
+            <img src="/static/images/icons8-github-24.png" class="rounded mx-auto d-block" width="20" height="20" alt="GitHub"/>
+          </a>
+        </div>
+        <div class="menu-icons m-2 my-sm-0">
+          <a href="mailto:mark.mcdonald1@icloud.com">
+            <img src="/static/images/icons8-email-24.png" class="rounded mx-auto d-block" width="20" height="20" alt="eMail"/>
+          </a>
+        </div>
     </div>
 </nav>
   	</header>
   	<main role="main">
-  		<div class="row">
-	<div class="col-1"></div>
-	<div class="jumbotron col-10 bg-blue my-4 py-4">
+  		<!-- Found in '_includes/'-->
+<div class="row">
+<!--	<div class="col-1"></div>-->
+	<div class="jumbotron shadow-sm col-10 my-4 py-4 mx-auto">
+		<div class="row" display="inline-block">
+			<img class="col-12 col-sm-4 mx-auto my-2" style="max-width: 300px" width="100%" height="100%" src="static/images/profile_photo.jpg">
+			<div class="col-12 col-sm-8 mx-auto" style="font-size: 18px">
+				<p style="font-weight: bold"> Objective </p>
+				<p> I aim to bridge the gap between business needs and modern technical capabilities.</p>
+				<p style="font-weight: bold"> Qualifications </p>
+				<p> I have a degree in software engineering with a certificate in Data Science from Harvard.  I have
+					extensive experience in financial and technical management with a unique set of experiences
+					which position me well to understand a broad scope of business functions and markets:</p>
+				<ul>
+					<li>Controller of multi-location large engineered equipment manufacturer</li>
+					<li>Led numerous US and international new acquisition integrations</li>
+					<li>CIO of US Siemens Mobile Phone business</li>
+					<li>Led various small and large digital transformation efforts</li>
+					<li>Worked in Germany for 5 years (fluent in German)</li>
+				</ul>
 
-		<p class="lead">
-			With a background in financial and technology management, I am completing a Masters degree in Software Engineering with a certificate in Data Science.
-		</p>
+			</div>
 
-		<p class="lead">
-			I aim to combine my business and technical skills to deliver A.I. solutions to small and medium-sized businesses.
-		</p>
 
-		<p class="lead">
-			I believe that Deep Learning can be applied to a broad range of business topics and is an underutilized success factor.  My goal is to help businesses exploit advanced technologies to improve their customers’ experience while increasing employee satisfaction and performance.
-		</p>
+		</div>
 
 	</div> <!-- jumbotron -->
-	<div class="col-1"></div>
+<!--	<div class="col-1"></div>-->
 </div> <!-- row --> 
 
 <!-- Marketing messaging and featurettes
@@ -126,36 +148,55 @@
 <!-- Wrap the rest of the page in another container to center all the content. -->
 
 <div class="container marketing">
-
+	<!-- Found in _includes/-->
 	
 <div class="row">
-  <div class="col-lg-4">
-	<img src="static/images/harvard_shield_wreath.png" class="rounded mx-auto d-block" width="120" height="120" alt="Harvard Shield" />
-	<h2>Harvard Studies in Extension</h2>
-	<div class="tagline_row">
-	  <p>Software Engineering - Certificate in data science with focus on computer vision</p>
-	</div>
-	<p><a class="btn btn-secondary" href="course_summary.html" role="button">Review Coursework &raquo;</a></p>
-  </div><!-- /.col-lg-4 -->
-  <div class="col-lg-4">
-	<img src="static/images/digital_circuit.jpg" class="rounded mx-auto d-block" width="120" height="120" alt="Projects" />
-	<h2>Academic Projects</h2>
-	<div class="tagline_row">
-	  <p>Collection of academic projects demonstrating skills and technologies</p>
-	</div>
-	<p><a class="btn btn-secondary" href="/projects.html" role="button">See Project Examples &raquo;</a></p>
-  </div><!-- /.col-lg-4 -->
-  <div class="col-lg-4">
-	<img src="static/images/gears.png" class="rounded mx-auto d-block" width="120" height="120" alt="Projects" />
-	<h2>Experience</h2>
-	<div class="tagline_row">
-	  <p>Broad business experience including financial and technology leadership, Global M&A and Project Management</p>
-	</div>
-	<p><a class="btn btn-secondary" href="resume.html" role="button">View Resume &raquo;</a></p>
-  </div><!-- /.col-lg-4 -->
-</div><!-- /.row -->
 
-</div><!-- /.container -->
+	<div class="col-12 col-md-4 px-1 my-2 ">
+		<div class="card d-flex shadow">
+			<h4 class="card-header bg-blue">Education</h4>
+			<div class="card-body bg-lightblue align-items-stretch">
+				<h5 class="card-title mb-0">Harvard</h5>
+				<div class="card-text ">Master's Software Engineering / Data Science Certificate</div>
+				  <p></p>
+				<h5 class="card-title mb-0">Iowa State University</h5>
+				<div class="card-text ">Accounting / German</div>
+				  <p></p>
+
+			</div>
+			<div class="card-footer bg-blue">
+				<a href="course_summary.html" class="card-link">Coursework &raquo;</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-12 col-md-4 px-1 my-2 d-flex">
+		<div class="card shadow">
+			<h4 class="card-header bg-blue">Projects</h4>
+			<div class="card-body bg-lightblue align-items-stretch">
+				<div class="card-text ">Collection of academic projects demonstrating skills and technologies</div>
+			</div>
+			<div class="card-footer bg-blue">
+				<a href="/projects.html" class="card-link">Projects &raquo;</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-12 col-md-4 px-1 my-2 d-flex">
+		<div class="card shadow">
+			<h4 class="card-header bg-blue">Experience</h4>
+			<div class="card-body bg-lightblue align-items-stretch">
+				<div class="card-text">Broad business experience including financial and technology leadership, Global M&A and Project Management</div>
+			</div>
+			<div class="card-footer bg-blue">
+				<a href="resume.html" class="card-link">See Resume &raquo;</a>
+			</div>
+		</div>
+	</div>
+
+
+</div><!-- /.row -->
+</div>
 
 
   		
