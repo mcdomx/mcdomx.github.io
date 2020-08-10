@@ -50,7 +50,9 @@ body {
 }
 
 .bg-blue a:hover {
-  font-weight: bold
+  /*font-weight: bold;*/
+  text-decoration: underline;
+  /*box-shadow: 0px 0px 25px antiquewhite;*/
 }
 
 .bg-orange {
@@ -59,7 +61,7 @@ body {
 }
 
 .menu-icons :hover {
-  box-shadow: 0px 0px 15px antiquewhite;
+  box-shadow: 0px 0px 25px antiquewhite;
 }
 
 

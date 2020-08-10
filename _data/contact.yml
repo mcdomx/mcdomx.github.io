@@ -4,10 +4,14 @@
   value: +1-561-213-2871
 - description: eMail
   type: email
-  icon: /static/images/envelope-closed.svg
+  icon: /static/images/icons8-email-24.png
   link: mailto:mark.mcdonald1@icloud.com
   value: mark.mcdonald1@icloud.com
 - description: LinkedIn
-  icon: /static/images/LI-In-Bug.png
+  icon: /static/images/icons8-linkedin-24.png
   type: link
   value: https://www.linkedin.com/in/mcdonaldboston/
+- description: GitHub
+  icon: /static/images/icons8-github-24.png
+  type: link
+  value: https://github.com/mcdomx
