@@ -1,7 +1,7 @@
 ---
 project_name: Fashion Recommendation
-author: Mark McDonald
-description: Image Segmentation of Fashion Objects
+author: Mark McDonald, An Hoang, Vivek Bhatia
+description: Identification of Fashion Objects in an Image
 gitlink: https://mcdomx.github.io/computer-vision-project
 image: /static/images/fashion-recommendation.png
 pagelength: 25500px

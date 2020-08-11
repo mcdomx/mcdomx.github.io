@@ -1,7 +1,7 @@
 ---
 project_name: Mark's Covid Tracker
 author: Mark McDonald
-description: Django-based Covid Tracker based on Bokeh Visualizations
+description: Daily US COVID-19 Trends
 gitlink: https://mcdomx.github.io/marks-covid-tracker/
 image: /static/images/marks_covid_tracker.png
 pagelength: 6000px

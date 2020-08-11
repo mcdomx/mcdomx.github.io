@@ -1,7 +1,7 @@
 ---
 layout: default
 description: Mark McDonald Projects
-author: Mark McDonald
+<!--author: Mark McDonald-->
 title: Mark McDonald · Projects
 ---
 
@@ -12,22 +12,55 @@ title: Mark McDonald · Projects
 <div class="container marketing ">
 
 <!-- {% include project_marketing.html %}  -->
+<div class="mt-5">
+	<div class="project-heading">Technical Skills</div>
+	<div class="lead">My Harvard coursework focused on Python but also included C/Unix and Java.
+	Data Science work included extensive work with the popular python packages for Machine/Deep Learning
+		and data management.</div>
+	<div class="mt-2" style="font-weight: bold">Languages, Frameworks, Libraries</div>
+	<div class="row">
 
-<hr class="featurette-divider">
+		<ul>
+			<li>Python</li>
+			<li>Open CV</li>
+			<li>Pandas</li>
+			<li>Numpy</li>
+			<li>SciKit-Learn / Statsmodels / PyGam</li>
+			<li>Keras / Tensorflow</li>
+			<li>Bokeh</li>
+			<li>Django</li>
+			<li>Flask</li>
+		</ul>
+		<ul>
+			<li>Docker</li>
+			<li>Agile</li>
+			<li>Flask</li>
+			<li>C / Unix</li>
+			<li>Java (incl. Maven)</li>
+			<li>Springboot</li>
+			<li>Java Microsservices with Springboot</li>
+			<li>RaspberryPi</li>
+		</ul>
+	</div>
+
+</div>
+
+
+<hr class="project-divider">
 
 {% for project in site.projects %}
 
-	<div class="row featurette d-flex align-items-center">
+	<div class="row featurette d-flex align-items-center my-5">
 	  
 	  
 	  <div class="col-md-7 {% cycle '', 'order-md-2' %} ">
 	
 		<a href={{ project.url }}>
-			<h4 class="featurette-heading">{{ project.project_name }}</h4>
+			<div class="project-heading">{{ project.project_name }}</div>
 		</a>
-		<h3 class="featurette-tagline">{{ project.description }}</h3>
-
-		<p class="lead">{{ project.summary }}</p>
+		<h3 class="project-tagline">{{ project.description }}</h3>
+		<div>By: {{ project.author }}</div>
+		<div class="lead mt-4">{{ project.summary }}</div>
 	  </div>
   
 	  <div class="col-md-4 {% cycle '', 'order-md-1' %} ">

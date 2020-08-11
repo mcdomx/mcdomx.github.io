@@ -10,30 +10,43 @@ title: Mark McDonald · Resume
 ================================================== -->
 <!-- Display contact details -->
 
-<div class="container my-5 mx-2">
+<div class="container my-5 mx-1">
 <hr>
-	{% for item in site.data.contact %}
-		<div class="row mb-2">
-			<div class="col-2"></div>
-			
-			<div class="col-1">
-				<img src={{ item.icon }} class="rounded mx-auto d-block" width="20" height="20" alt={{ item.description }}/>
-			</div>
-			
-			<div class="col-7">
-			
-				{% if item.type == 'text' %}
-					{{ item.value }}
-				{% elsif item.type == 'link' %}
-					<a href={{ item.value }} target="_blank">{{ item.value }}</a>
-				{% elsif item.type == 'email' %}
-					<a href={{ item.link }} target="_blank">{{ item.value }}</a>
-				{% endif %}
-			
-			</div>
-			<div class="col-2"></div>  
-		</div> <!-- row -->
-	{% endfor%}
+	<div class="row justify-content-center">
+		<div>
+			<figure class="mx-auto mb-2">
+					<img class="shadow-lg rounded" style="max-width: 280px; max-height: 419px" width="100%" src="static/images/profile_photo.jpg">
+			</figure>
+		</div>
+		<div>
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="my-3 mx-auto">
+						"I welcome the opportunity to speak with you in person!"
+					</div>
+				</div>
+			{% for item in site.data.contact %}
+				<div class="row mb-2">
+					<div class="col-2"></div>
+
+					<div class="col-1">
+						<img src={{ item.icon }} class="rounded mx-auto d-block" width="20" height="20" alt={{ item.description }}/>
+					</div>
+
+					<div class="col-7">
+						{% if item.type == 'text' %}
+							{{ item.value }}
+						{% elsif item.type == 'link' %}
+							<a href={{ item.value }} target="_blank">{{ item.value }}</a>
+						{% elsif item.type == 'email' %}
+							<a href={{ item.link }} target="_blank">{{ item.value }}</a>
+						{% endif %}
+					</div>
+					<div class="col-2"></div>
+				</div> <!-- row -->
+			{% endfor%}
+		</div>
+	</div>
 <hr>
 </div>
 
