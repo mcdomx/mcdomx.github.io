@@ -16,9 +16,11 @@ title: Mark McDonald · Projects
 	<div class="project-heading">Technical Skills</div>
 <!--	<div class="row">-->
 <!--		<div class="col-md-6">-->
-	<div class="lead col-lg-10">My Harvard coursework focused on Python but also included C/Unix and Java.
+	<div class="lead col-lg-10 my-3">My Harvard coursework focused on Python but also included C/Unix and Java.
 	Data Science work included extensive work with the popular python packages for Machine/Deep Learning
 		and data management.</div>
+	<div class="lead col-lg-10 my-3">The projects linked below highlight many of the skills I learned at Harvard.</div>
+
 <!--		</div>-->
 <!--		<div class="col-md-4">-->
 	<div class="row m-2" style="font-weight: bold">Languages, Frameworks, Libraries and Methodologies</div>
@@ -77,7 +79,7 @@ title: Mark McDonald · Projects
 
 {% for project in site.projects %}
 
-	<div class="row featurette d-flex align-items-center my-5">
+	<div class="row featurette d-flex align-items-center py-5 my-5 {% cycle 'bg-lightblue', '' %}">
 	  
 	  
 	  <div class="col-md-7 {% cycle '', 'order-md-2' %} ">
@@ -99,7 +101,7 @@ title: Mark McDonald · Projects
 
 	</div>
 
-	<hr class="featurette-divider">
+<!--	<hr class="featurette-divider">-->
 
 {% endfor %}
 
