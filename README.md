@@ -27,6 +27,8 @@ To add new project's:
 3.  Copy an existing project md template in `_projects/`.  Each md file will be used to create a link to a new project site automatically.  No need to update any HTML.  Just add the new md file to include new projects.
 4.  Rename the template to the repo name of the project
 5.  Update the md fields with relevant project information
+6.  Push the project to github
+7.  Review site at https://mcdomx.github.io.
 
 To add or modify contact information:
 - Modify the `_data/contact.yml` file.
