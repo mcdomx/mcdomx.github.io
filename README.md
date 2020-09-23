@@ -22,7 +22,7 @@ Run the site and view at http://localhost:4000
     
 To add new project's:
     
-1.  Create a project page for the project
+1.  Create a project page for the project using github pages
 2.  Copy an application screenshot to `static/images`
 3.  Copy an existing project md template in `_projects/`.  Each md file will be used to create a link to a new project site automatically.  No need to update any HTML.  Just add the new md file to include new projects.
 4.  Rename the template to the repo name of the project
